@@ -1,0 +1,39 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato';
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 33.3vh;
+    font-size: 3em;
+    color: white;
+    transition: font 0.3s ease;
+}
+
+.card:hover {
+    font-size: 3.5em;
+}
+
+#plan {
+    background-image: url("gym-background.jpg");
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#session {
+    background-image: url("start_session.jpg");
+    background-size: contain;
+}
+
+#track {
+    background-image: url("progress.jpg");
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
