@@ -18,12 +18,18 @@ body {
     padding-left: 0.5em;
 }
 
-#overlay {
-    width: 100%;
-}
-
 #subheading {
     font-size: 0.75em;
+}
+
+caption {
+    padding-bottom: 0.5em;
+}
+
+th {
+    min-width: 3em;
+    font-weight: bold;
+    color: white;
 }
 
 main {
@@ -38,6 +44,9 @@ main {
 
 .card {
     height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: box-shadow 0.2s ease-in;
 }
 
@@ -128,4 +137,10 @@ button {
 button:hover {
     box-shadow: inset 0 0 10px #fbfbfb;
     width: 20rem;
+}
+
+@media (min-width: 1440px) {
+    table {
+        min-height: 20vh;
+    }
 }
