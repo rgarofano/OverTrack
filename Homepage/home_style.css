@@ -12,6 +12,8 @@ body {
     height: 33.3vh;
     font-size: 3em;
     color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
     transition: font 0.3s ease;
 }
 
