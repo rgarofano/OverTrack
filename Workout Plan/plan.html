@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="edit_plan.js" defer></script>
     <title>Workout Plan</title>
 </head>
 
@@ -20,6 +22,7 @@
 
     <main>
         <section class="card" id="push-one">
+            <i class="material-icons hide">close</i>
             <table>
                 <caption>Push - Day 1</caption>
                 <tr>
@@ -48,13 +51,14 @@
                     <td>12</td>
                 </tr>
                 <tr>
-                    <td>Skullcrushers</td>
-                    <td>3</td>
+                    <td>Tricep Pulldowns</td>
+                    <td>4</td>
                     <td>12</td>
                 </tr>
             </table>
         </section>
         <section class="card" id="pull-one">
+            <i class="material-icons hide">close</i>
             <table>
                 <caption>Pull - Day 1</caption>
                 <tr>
@@ -90,6 +94,7 @@
             </table>
         </section>
         <section class="card" id="legs-one">
+            <i class="material-icons hide">close</i>
             <table>
                 <caption>Legs - Day 1</caption>
                 <tr>
@@ -130,6 +135,7 @@
             <span class="rest" id="bottom">Rest</span>
         </section>
         <section class="card" id="push-two">
+            <i class="material-icons hide">close</i>
             <table>
                 <caption>Push - Day 2</caption>
                 <tr>
@@ -165,6 +171,7 @@
             </table>
         </section>
         <section class="card" id="pull-two">
+            <i class="material-icons hide">close</i>
             <table>
                 <caption>Pull - Day 2</caption>
                 <tr>
@@ -200,6 +207,7 @@
             </table>
         </section>
         <section class="card" id="legs-two">
+            <i class="material-icons hide">close</i>
             <table>
                 <caption>Legs - Day 2</caption>
                 <tr>
@@ -237,7 +245,7 @@
     </main>
 
     <aside>
-        <button>Edit Workout Plan</button>
+        <button id="edit">Edit Workout Plan</button>
     </aside>
 </body>
 
