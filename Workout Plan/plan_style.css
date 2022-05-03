@@ -22,6 +22,11 @@ body {
     font-size: 0.75em;
 }
 
+table {
+    height: fit-content;
+    width: fit-content;
+}
+
 caption {
     padding-bottom: 0.5em;
 }
@@ -37,153 +42,37 @@ td {
     text-align: center;
 }
 
-@media (min-width: 1440px) {
-    main {
-        display: grid; 
-        grid-template-columns: repeat(3, 1fr) 0.5fr repeat(3, 1fr);
-        text-align: center;
-        font-family: "Lato";
-        color: white;
-        height: 25vh;
-        align-content: center;
-    }
 
-    .rest {
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: large;
-        height: 8.33vh;
-    }
-
-    #top {
-        border-top: 2.4px solid #ffffcc;
-    }
-    
-    #bottom {
-        padding-bottom: 0;
-        border-bottom: 2.4px solid #ffffcc;
-    }
+main {
+    display: flex;
+    text-align: center;
+    font-family: "Lato";
+    color: white;
+    height: 25vh;
+    align-content: center;
 }
 
-@media (min-width: 767px) and (max-width: 1439px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 0.2fr 1fr;
-        text-align: center;
-        font-family: "Lato";
-        color: white;
-        align-content: center;
-    }
-    
-    .rest {
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: large;
-    }
-
-    #rest-block {
-        grid-column: span 3;
-    }
-
-    #top {
-        opacity: 0;
-    }
-    
-    #bottom {
-        opacity: 0;
-    }
-
-    #legs-one {
-        border-right: 2.4px solid white;
-        border-top-right-radius: 0.5em;
-        border-bottom-right-radius: 0.5em;
-    }
-
-    #push-two {
-        border-left: 2.4px solid white;
-        border-top-left-radius: 0.5em;
-        border-bottom-left-radius: 0.5em;
-    }
-
+.rest {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    text-align: center;
 }
 
-i {
-    height: 1em;
-    background-color: red;
-    border-radius: 0.1em;
-    align-self: flex-start;
-    margin-top: 0.3em;
+#top {
+    border-top: 2.4px solid #ffffcc;
 }
 
-.hide {
-    opacity: 0;
-}
-
-@media (max-width: 766px) {
-    
-    main {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr) 0.3fr repeat(3, 1fr);
-        justify-items: center;
-        grid-gap: 10px;
-        font-family: "Lato";
-        color: white;
-        align-content: center;
-    }
-
-    .card {
-        width: 70vw;
-    }
-
-    #title {
-        font-size: 2.2em;
-    }
-
-    #push-one {
-        border: 2.4px solid white;
-        border-radius: 0.5em;
-    }
-    
-    #pull-one {
-        border: 2.4px solid white;
-        border-radius: 0.5em;
-    }
-    
-    #legs-one {
-        border: 2.4px solid white;
-        border-radius: 0.5em;
-    }
-    
-     #rest-block {
-         margin-top: 1.5em;
-         margin-bottom: 1.5em;
-     }
-
-    #push-two {
-        border: 2.4px solid white;
-        border-radius: 0.5em;
-    }
-    
-    #pull-two {
-        border: 2.4px solid white;
-        border-radius: 0.5em;
-    }
-    
-    #legs-two {
-        border: 2.4px solid white;
-        border-radius: 0.5em;
-    }
-
+#bottom {
+    padding-bottom: 0;
+    border-bottom: 2.4px solid #ffffcc;
 }
 
 .card {
     height: 25vh;
+    width: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,7 +83,7 @@ i {
     box-shadow: inset 0 0 10px #000000;
 }
 
-#push-one {
+#monday {
     background-color: #0080ff;
     border-left: 2.4px solid #ffffcc;
     border-top: 2.4px solid #ffffcc;
@@ -203,32 +92,38 @@ i {
     border-bottom-left-radius: 0.5em;
 }
 
-#pull-one {
+#tuesday {
     background-color: #0040ff;
     border-top: 2.4px solid #ffffcc;
     border-bottom: 2.4px solid #ffffcc;
 }
 
-#legs-one {
+#wednesday {
     background-color: #0080ff;;
     border-top: 2.4px solid #ffffcc;
     border-bottom: 2.4px solid #ffffcc;
 }
 
-#push-two {
+#thursday {
     background-color: #0040ff;
     border-top: 2.4px solid #ffffcc;
     border-bottom: 2.4px solid #ffffcc;
 }
 
-#pull-two {
+#friday {
     background-color: #0080ff;
     border-top: 2.4px solid #ffffcc;
     border-bottom: 2.4px solid #ffffcc;
 }
 
-#legs-two {
+#saturday {
     background-color: #0040ff;
+    border-top: 2.4px solid #ffffcc;
+    border-bottom: 2.4px solid #ffffcc;
+}
+
+#sunday {
+    background-color: #0080ff;
     border-right: 2.4px solid #ffffcc;
     border-top: 2.4px solid #ffffcc;
     border-bottom: 2.4px solid #ffffcc;
