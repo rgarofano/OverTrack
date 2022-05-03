@@ -165,14 +165,6 @@ i {
          margin-bottom: 1.5em;
      }
 
-    #top {
-        opacity: 0;
-    }
-
-    #bottom {
-        opacity: 0;
-    }
-
     #push-two {
         border: 2.4px solid white;
         border-radius: 0.5em;
