@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #exercise {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="exercise" type="text" value="Lat Pulldown" readonly>
+    <script>
+        const input = document.querySelector('#exercise');
+        input.addEventListener('dblclick', () => {
+            console.log("You double clicked");
+            input.setAttribute('readonly', 'false');
+        });
+    </script>
+</body>
+
+</html>
