@@ -162,8 +162,121 @@ button:hover {
     }
 }
 
-#test{
-    height: 100px;
-    width: 100px;
-    transform: scale(1.8)
+#monday-title{
+    margin-top: 20px;
+
+}
+#monday-add-box{
+
+    transform: scale(1.8);
+    display: inline;
+    padding-top: 10px;
+
+}
+
+#monday-table{
+    z-index: -1;
+    display: inline;
+}
+
+#tuesday-title{
+    margin-top: 20px;
+
+}
+#tuesday-add-box{
+
+    transform: scale(1.8);
+    display: inline;
+    padding-top: 10px;
+
+}
+
+#tuesday-table{
+    z-index: -1;
+    display: inline;
+}
+
+#wednesday-title{
+    margin-top: 20px;
+
+}
+
+#wednesday-add-box{
+
+    transform: scale(1.8);
+    display: inline;
+    padding-top: 10px;
+}
+
+#wednesday-table{
+    z-index: -1;
+    display: inline;
+}
+
+#thursday-title{
+    margin-top: 20px;
+
+}
+
+#thursday-add-box{
+
+    transform: scale(1.8);
+    display: inline;
+    padding-top: 10px;
+}
+
+#thursday-table{
+    z-index: -1;
+    display: inline;
+}
+
+#friday-title{
+    margin-top: 20px;
+
+}
+
+#friday-add-box{
+
+    transform: scale(1.8);
+    display: inline;
+    padding-top: 10px;
+}
+
+#friday-table{
+    z-index: -1;
+    display: inline;
+}
+
+#saturday-title{
+    margin-top: 20px;
+
+}
+
+#saturday-add-box{
+
+    transform: scale(1.8);
+    display: inline;
+    padding-top: 10px;
+}
+
+#saturday-table{
+    z-index: -1;
+    display: inline;
+}
+
+#sunday-title{
+    margin-top: 20px;
+
+}
+
+#sunday-add-box{
+
+    transform: scale(1.8);
+    display: inline;
+    padding-top: 10px;
+}
+
+#sunday-table{
+    z-index: -1;
+    display: inline;
 }
