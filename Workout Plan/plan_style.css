@@ -178,7 +178,7 @@ button:hover {
     cursor: url(hand.cur), pointer;
 }
 
-#monday-table{
+table {
     z-index: -1;
     display: inline;
 }
@@ -199,11 +199,6 @@ button:hover {
     cursor: url(hand.cur), pointer;
 }
 
-#tuesday-table{
-    z-index: -1;
-    display: inline;
-}
-
 #wednesday-title{
     margin-top: 20px;
 
@@ -218,11 +213,6 @@ button:hover {
 
 #wednesday-add-box:hover {
     cursor: url(hand.cur), pointer;
-}
-
-#wednesday-table{
-    z-index: -1;
-    display: inline;
 }
 
 #thursday-title{
@@ -241,11 +231,6 @@ button:hover {
     cursor: url(hand.cur), pointer;
 }
 
-#thursday-table{
-    z-index: -1;
-    display: inline;
-}
-
 #friday-title{
     margin-top: 20px;
 
@@ -260,11 +245,6 @@ button:hover {
 
 #friday-add-box:hover {
     cursor: url(hand.cur), pointer;
-}
-
-#friday-table{
-    z-index: -1;
-    display: inline;
 }
 
 #saturday-title{
@@ -283,11 +263,6 @@ button:hover {
     cursor: url(hand.cur), pointer;
 }
 
-#saturday-table{
-    z-index: -1;
-    display: inline;
-}
-
 #sunday-title{
     margin-top: 20px;
 
@@ -302,9 +277,4 @@ button:hover {
 
 #sunday-add-box:hover {
     cursor: url(hand.cur), pointer;
-}
-
-#sunday-table{
-    z-index: -1;
-    display: inline;
 }
