@@ -1,5 +1,6 @@
 body {
     background-color: #000033;
+    font-size: 18px;
 }
 
 #title {
@@ -24,7 +25,10 @@ body {
 
 table {
     height: fit-content;
+    min-height: 20vh;
     width: fit-content;
+    z-index: -1;
+    display: inline;
 }
 
 caption {
@@ -42,37 +46,36 @@ td {
     text-align: center;
 }
 
-
 main {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 25px 25px;
     text-align: center;
     font-family: "Lato";
     color: white;
-    height: 25vh;
-    align-content: center;
+    height: 75%;
 }
 
-.rest {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    text-align: center;
+section {
+    flex-basis: 300px;
+    flex-shrink: 0;
+    border: 2.4px solid #ffffcc;
+    border-radius: 5%;
 }
 
-#top {
-    border-top: 2.4px solid #ffffcc;
+section:nth-of-type(2n) {
+    background-color: #0040ff;
 }
 
-#bottom {
-    padding-bottom: 0;
-    border-bottom: 2.4px solid #ffffcc;
+section:nth-of-type(2n + 1) {
+    background-color: #0080ff;
 }
 
 .card {
-    height: 25vh;
-    width: 30vh;
+    min-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,197 +87,16 @@ main {
     box-shadow: inset 0 0 10px #000000;
 }
 
-#monday {
-    background-color: #0080ff;
-    border-left: 2.4px solid #ffffcc;
-    border-top: 2.4px solid #ffffcc;
-    border-bottom: 2.4px solid #ffffcc;
-    border-top-left-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-}
-
-#tuesday {
-    background-color: #0040ff;
-    border-top: 2.4px solid #ffffcc;
-    border-bottom: 2.4px solid #ffffcc;
-}
-
-#wednesday {
-    background-color: #0080ff;;
-    border-top: 2.4px solid #ffffcc;
-    border-bottom: 2.4px solid #ffffcc;
-}
-
-#thursday {
-    background-color: #0040ff;
-    border-top: 2.4px solid #ffffcc;
-    border-bottom: 2.4px solid #ffffcc;
-}
-
-#friday {
-    background-color: #0080ff;
-    border-top: 2.4px solid #ffffcc;
-    border-bottom: 2.4px solid #ffffcc;
-}
-
-#saturday {
-    background-color: #0040ff;
-    border-top: 2.4px solid #ffffcc;
-    border-bottom: 2.4px solid #ffffcc;
-}
-
-#sunday {
-    background-color: #0080ff;
-    border-right: 2.4px solid #ffffcc;
-    border-top: 2.4px solid #ffffcc;
-    border-bottom: 2.4px solid #ffffcc;
-    border-top-right-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-}
-
-aside {
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-button {
-    padding: 1rem 2rem;
-    border: 2.4px solid white;
-    border-radius: 0.5em;
-    font-family: "Lato";
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: white;
-    background-color: #000033;
-    transition: box-shadow 0.2s ease-in, padding 0.5s ease-in;
-}
-
-button:hover {
-    box-shadow: inset 0 0 10px #fbfbfb;
-    padding: 1rem 4rem;
-}
-
-@media (min-width: 1440px) {
-    table {
-        min-height: 20vh;
-    }
-}
-
-#monday-title{
-    margin-top: 20px;
-
-}
-#monday-add-box{
-
-    transform: scale(1.8);
-    display: inline;
-    padding-top: 10px;
-
-}
-
-#monday-add-box:hover {
-    cursor: url(hand.cur), pointer;
-}
-
-table {
-    z-index: -1;
-    display: inline;
-}
-
-#tuesday-title{
-    margin-top: 20px;
-
-}
-#tuesday-add-box{
-
-    transform: scale(1.8);
-    display: inline;
-    padding-top: 10px;
-
-}
-
-#tuesday-add-box:hover {
-    cursor: url(hand.cur), pointer;
-}
-
-#wednesday-title{
-    margin-top: 20px;
-
-}
-
-#wednesday-add-box{
-
+.material-symbols-outlined {
     transform: scale(1.8);
     display: inline;
     padding-top: 10px;
 }
 
-#wednesday-add-box:hover {
-    cursor: url(hand.cur), pointer;
+.material-symbols-outlined:hover {
+    cursor: pointer;
 }
 
-#thursday-title{
-    margin-top: 20px;
-
-}
-
-#thursday-add-box{
-
-    transform: scale(1.8);
-    display: inline;
-    padding-top: 10px;
-}
-
-#thursday-add-box:hover {
-    cursor: url(hand.cur), pointer;
-}
-
-#friday-title{
-    margin-top: 20px;
-
-}
-
-#friday-add-box{
-
-    transform: scale(1.8);
-    display: inline;
-    padding-top: 10px;
-}
-
-#friday-add-box:hover {
-    cursor: url(hand.cur), pointer;
-}
-
-#saturday-title{
-    margin-top: 20px;
-
-}
-
-#saturday-add-box{
-
-    transform: scale(1.8);
-    display: inline;
-    padding-top: 10px;
-}
-
-#saturday-add-box:hover {
-    cursor: url(hand.cur), pointer;
-}
-
-#sunday-title{
-    margin-top: 20px;
-
-}
-
-#sunday-add-box{
-
-    transform: scale(1.8);
-    display: inline;
-    padding-top: 10px;
-}
-
-#sunday-add-box:hover {
-    cursor: url(hand.cur), pointer;
+.card-title {
+    margin-top: 10px;
 }

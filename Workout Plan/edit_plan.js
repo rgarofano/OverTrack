@@ -7,3 +7,16 @@ add_boxes.forEach( (add_box, index) => {
         tables[index].style.zIndex = '0';
     });
 });
+
+// Fixing bug with contenteditable
+const tableData = document.querySelectorAll('td');
+
+tableData.forEach(data => {
+    data.addEventListener('click', event => {
+        event.target.contentEditable = true;
+        event.target.focus();
+    });
+    data.addEventListener('blur', event => {
+        event.target.contentEditable = false;
+    });
+});
